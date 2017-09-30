@@ -27,18 +27,33 @@ public class ViewMessage extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        jlMessage = new javax.swing.JLabel();
+        jbtnHello = new javax.swing.JButton();
+        jbtnBye = new javax.swing.JButton();
+        jlwallpaper = new javax.swing.JLabel();
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 400, Short.MAX_VALUE)
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 300, Short.MAX_VALUE)
-        );
+        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jlMessage.setForeground(new java.awt.Color(255, 255, 255));
+        jlMessage.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jlMessage.setText("It is work");
+        jlMessage.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        getContentPane().add(jlMessage, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 140, 420, 20));
+
+        jbtnHello.setBackground(new java.awt.Color(51, 0, 153));
+        jbtnHello.setForeground(new java.awt.Color(255, 255, 255));
+        jbtnHello.setText("Hello");
+        getContentPane().add(jbtnHello, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 220, -1, -1));
+
+        jbtnBye.setBackground(new java.awt.Color(51, 0, 153));
+        jbtnBye.setForeground(new java.awt.Color(255, 255, 255));
+        jbtnBye.setText("Bye");
+        getContentPane().add(jbtnBye, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 220, -1, -1));
+
+        jlwallpaper.setIcon(new javax.swing.ImageIcon(getClass().getResource("/views/purple.jpg"))); // NOI18N
+        jlwallpaper.setText("jLabel1");
+        getContentPane().add(jlwallpaper, new org.netbeans.lib.awtextra.AbsoluteConstraints(-20, 0, 440, 348));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -79,5 +94,9 @@ public class ViewMessage extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    public javax.swing.JButton jbtnBye;
+    public javax.swing.JButton jbtnHello;
+    public javax.swing.JLabel jlMessage;
+    private javax.swing.JLabel jlwallpaper;
     // End of variables declaration//GEN-END:variables
 }
